@@ -1,11 +1,13 @@
 public class Conversor {
-
     public static void main(String[] args) {
         ApiCliente api = new ApiCliente();
-        String json = api.obtenerTasas("USD"); // Base USD
+        String json = api.obtenerTasas("USD");
 
-        System.out.println("Respuesta de la API:");
-        System.out.println(json);
+        if (json != null) {
+            System.out.println("Respuesta JSON de la API:");
+            System.out.println(json);
+        } else {
+            System.out.println("No se pudo obtener la respuesta.");
+        }
     }
-
 }
