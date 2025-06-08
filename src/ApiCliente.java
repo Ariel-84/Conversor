@@ -17,7 +17,7 @@ public class ApiCliente {
         try {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-            // Verificamos el código de estado
+            // Verificamos el código de estado.
             if (response.statusCode() == 200) {
                 return response.body(); // Devuelve el JSON
             } else {
