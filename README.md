@@ -11,7 +11,8 @@ Este proyecto implementa un conversor de monedas que conecta con una API públic
 - Dólar estadounidense (USD)
 - Peso argentino (ARS)
 - Real brasileño (BRL)
-- Euro Europa  (EUR)
+- Euro europa  (EUR)
+- Peso mexicano (MXN)
   
 
 El programa ofrece un menú interactivo en consola para que el usuario pueda seleccionar el tipo de conversión y el monto a convertir.
@@ -32,7 +33,7 @@ El programa ofrece un menú interactivo en consola para que el usuario pueda sel
 - Solicita al usuario la opción de conversión
 - Obtiene tasas de cambio en tiempo real desde la API
 - Convierte el monto ingresado según la tasa correspondiente
-- Guarda el registro de las conversiones y fecha/hora
+- Registro con marca de tiempo (usando java.time.LocalDateTime)
 - Maneja opciones inválidas y permite salir con opción 9
   
 
